@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday!</title>
+<style>
+    body {
+        text-align: center;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(to bottom, #ffe0f0, #fff6fb);
+        padding: 20px;
+    }
+    h1 {
+        color: #ff4da6;
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+    .cake {
+        position: relative;
+        margin: 50px auto;
+        width: 220px;
+        height: 150px;
+        background: #d2691e;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .candle {
+        position: absolute;
+        width: 15px;
+        height: 40px;
+        background: #fffacd;
+        top: -40px;
+        border-radius: 3px;
+    }
+    .flame {
+        position: absolute;
+        top: -15px;
+        left: 2px;
+        width: 10px;
+        height: 15px;
+        background: radial-gradient(circle, yellow 60%, orange 90%);
+        border-radius: 50%;
+        animation: flicker 0.2s infinite;
+    }
+    @keyframes flicker {
+        0% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.1); opacity: 0.8; }
+        100% { transform: scale(1); opacity: 1; }
+    }
+    #message {
+        display: none;
+        font-size: 1.1rem;
+        background: #fff0f5;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 350px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(255,105,180,0.3);
+        line-height: 1.5;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .hint {
+        font-size: 0.9rem;
+        color: #555;
+        margin-top: 5px;
+    }
+</style>
+</head>
+<body>
+
+<h1>🎂 Blow Out the Candles! 🎂</h1>
+<p class="hint">Allow microphone access and blow into it 🎤</p>
+
+<div class="cake" id="cake">
+    <div class="candle" style="left: 15px;"><div class="flame"></div></div>
+    <div class="candle" style="left: 55px;"><div class="flame"></div></div>
+    <div class="candle" style="left: 95px;"><div class="flame"></div></div>
+    <div class="candle" style="left: 135px;"><div class="flam
